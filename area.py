@@ -1,6 +1,4 @@
 from cmath import pi
 
-print("Input the radius of the circle")
-r=float(input())
-area = str(pi*r*r)
-print("Area of the circle is = "+area)
+r=float(input("Input the radius of the circle = "))
+print("Area of the circle is = ",(pi*r*r))
