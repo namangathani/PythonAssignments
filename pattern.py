@@ -1,14 +1,26 @@
-rows_no = 5
-for i in range(1, rows_no + 1):
-    for k in range(1, i):
-        print(" ", end = "")
-    for j in range(i, rows_no + 1):
-        print("* ", end = " ")
- 
+rows = int(input("Enter number of Rows:"))
+
+for i in range(1,rows):
+    for j in range(1,i):
+        # print required number of spaces
+        print('', end=' ')
+
+    k = i
+    for k in range(i,rows+1):
+        print('*', end=' ')
+
     print()
-for i in range(rows_no - 1, 0, -1):
-    for k in range(1, i):
-        print(" ", end = "")
-    for j in range(i, rows_no + 1):
-        print("* ", end = " ")
-    print()
+
+
+i = rows - 1
+while i >= 0:
+    j = 0
+    while j < i:
+        print('', end=' ')
+        j += 1
+    k = i
+    while k <= rows - 1:
+        print('*', end=' ')
+        k += 1
+    print('')
+    i -= 1
